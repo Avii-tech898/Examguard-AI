@@ -1,0 +1,51 @@
+{
+    "project": "EXAMGUARD AI",
+    "experiment": "Experiment 12",
+    "title": "Statistical Analysis of Multi-Document Experimental Results",
+    "dataset": {
+        "source": "experiment_11_multi_document_results.csv",
+        "number_of_evaluations": 4
+    },
+    "similarity": {
+        "mean": 35.858,
+        "minimum": 28.391,
+        "maximum": 43.325,
+        "population_std": 7.467
+    },
+    "risk_v1": {
+        "mean": 35.0,
+        "minimum": 20.0,
+        "maximum": 50.0,
+        "population_std": 15.0
+    },
+    "risk_v2": {
+        "mean": 25.5,
+        "minimum": 5.0,
+        "maximum": 46.0,
+        "population_std": 20.5
+    },
+    "v1_vs_v2": {
+        "mean_difference": -9.5,
+        "minimum_difference": -15.0,
+        "maximum_difference": -4.0
+    },
+    "risk_distribution": {
+        "v1": {
+            "medium": 2,
+            "low": 2
+        },
+        "v2": {
+            "medium": 2,
+            "low": 2
+        }
+    },
+    "alert_distribution": {
+        "medium": 2,
+        "low": 2
+    },
+    "research_notes": [
+        "Statistics describe the evaluated document pairs only.",
+        "The results are not a population-level accuracy estimate.",
+        "A larger labeled dataset is required for formal model accuracy evaluation."
+    ]
+}

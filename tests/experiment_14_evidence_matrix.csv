@@ -1,0 +1,6 @@
+experiment,area,artifact,status
+Experiment 09,Benchmark Reporting,experiment_09_results.csv,PASSED
+Experiment 10,Final Experimental Report,experiment_10_report.json,PASSED
+Experiment 11,Multi-Document Evaluation,experiment_11_multi_document_results.csv,PASSED
+Experiment 12,Statistical Analysis,experiment_12_statistics.json,PASSED
+Experiment 13,Reproducibility,experiment_13_reproducibility_report.json,PASSED

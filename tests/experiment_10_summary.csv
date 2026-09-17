@@ -1,0 +1,2 @@
+document_id,compared_document_id,similarity_score,similarity_method,risk_v1_score,risk_v1_level,risk_v2_score,risk_v2_level,v1_v2_difference,alert_type,alert_severity
+4,3,43.325,tfidf_cosine,50.0,medium,46.0,medium,-4.0,moderate_risk,medium

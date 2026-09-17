@@ -1,0 +1,53 @@
+{
+    "project": "EXAMGUARD AI",
+    "package": "Final Research Package",
+    "experiment": "Experiment 15",
+    "status": "READY",
+    "publication_readiness": true,
+    "validated_experiments": [
+        "Experiment 09",
+        "Experiment 10",
+        "Experiment 11",
+        "Experiment 12",
+        "Experiment 13",
+        "Experiment 14"
+    ],
+    "core_benchmark": {
+        "document_pair": "4 vs 3",
+        "similarity": 43.325,
+        "risk_v1_score": 50.0,
+        "risk_v1_level": "medium",
+        "risk_v2_score": 46.0,
+        "risk_v2_level": "medium",
+        "v1_v2_difference": -4.0,
+        "alert_type": "moderate_risk",
+        "alert_severity": "medium"
+    },
+    "statistical_summary": {
+        "evaluations": 4,
+        "average_similarity": 35.858,
+        "average_risk_v1": 35.0,
+        "average_risk_v2": 25.5,
+        "average_v1_v2_difference": -9.5
+    },
+    "reproducibility": {
+        "text_analysis": true,
+        "similarity": true,
+        "risk_v1": true,
+        "risk_v2": true,
+        "alert": true,
+        "analytics": true
+    },
+    "research_conclusion": "Across the evaluated real-document cases, EXAMGUARD AI demonstrated a consistent end-to-end processing pipeline covering document text extraction, NLP analysis, similarity measurement, Risk V1, Risk V2, alert generation, analytics, and repeated evaluation.",
+    "research_limitation": "The consolidated evidence represents descriptive evaluation and reproducibility of the tested documents. It does not establish population-level accuracy, precision, recall, or generalization.",
+    "publication_statement": "The current evidence package is internally consistent and suitable as a documented experimental evidence package. Claims remain limited to the evaluated cases and do not imply population-level model performance.",
+    "artifact_manifest": [
+        "experiment_09_results.csv",
+        "experiment_11_multi_document_results.csv",
+        "experiment_12_statistics.json",
+        "experiment_12_summary.csv",
+        "experiment_13_reproducibility_report.json",
+        "experiment_14_final_evidence.json",
+        "experiment_14_evidence_matrix.csv"
+    ]
+}

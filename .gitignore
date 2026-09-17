@@ -39,3 +39,5 @@ models/*.joblib
 *.pem
 *.key
 secrets.json
+# Uploaded documents (local runtime data)
+uploads/

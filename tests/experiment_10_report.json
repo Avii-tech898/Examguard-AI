@@ -1,0 +1,68 @@
+{
+    "project": "EXAMGUARD AI",
+    "experiment": "Experiment 10",
+    "title": "Final Experimental Report and Evidence Consolidation",
+    "version": "0.1.0",
+    "evaluation": {
+        "document_id": 4,
+        "compared_document_id": 3
+    },
+    "text_extraction": {
+        "status": "completed",
+        "ocr_engine": "pypdf",
+        "language": "en",
+        "ocr_confidence": 100.0,
+        "character_count": 3171
+    },
+    "nlp_analysis": {
+        "analysis_type": "nlp_basic",
+        "model_version": "nlp-basic-v1",
+        "confidence_score": 100.0,
+        "word_count": 436,
+        "sentence_count": 42,
+        "unique_word_count": 277
+    },
+    "similarity": {
+        "score": 43.325,
+        "method": "tfidf_cosine"
+    },
+    "risk_v1": {
+        "score": 50.0,
+        "level": "medium",
+        "model": "risk-rule-v1"
+    },
+    "risk_v2": {
+        "score": 46.0,
+        "level": "medium",
+        "model": "risk-rule-v2"
+    },
+    "v1_v2_comparison": {
+        "score_difference": -4.0,
+        "risk_level_changed": false
+    },
+    "alert": {
+        "type": "moderate_risk",
+        "severity": "medium",
+        "status": "open"
+    },
+    "analytics": {
+        "total_documents": 5,
+        "analyzed_documents": 5,
+        "similarity_comparisons": 6,
+        "average_similarity": 38.08,
+        "processing_rate": 100.0,
+        "analytics_status": "active"
+    },
+    "findings": [
+        "The evaluated document pair shows moderate similarity.",
+        "Risk V2 produced a lower score than Risk V1 for this case.",
+        "Both risk versions classified the document pair as medium risk.",
+        "The alert engine generated a moderate-risk alert.",
+        "The analytics layer reports an active system state."
+    ],
+    "limitations": [
+        "The benchmark uses the currently available real-document pair.",
+        "The observed result should not be interpreted as population-level model accuracy.",
+        "Processing time is environment dependent."
+    ]
+}

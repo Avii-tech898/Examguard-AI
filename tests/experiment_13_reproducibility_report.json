@@ -1,0 +1,30 @@
+{
+    "project": "EXAMGUARD AI",
+    "experiment": "Experiment 13",
+    "title": "End-to-End Reproducibility and Final Regression",
+    "version": "0.1.0",
+    "evaluation": {
+        "document_id": 4,
+        "compared_document_id": 3
+    },
+    "reproducibility": {
+        "text_analysis": true,
+        "similarity": true,
+        "risk_v1": true,
+        "risk_v2": true,
+        "alert": true,
+        "analytics": true
+    },
+    "validated_results": {
+        "similarity": 43.325,
+        "risk_v1_score": 50.0,
+        "risk_v1_level": "medium",
+        "risk_v2_score": 46.0,
+        "risk_v2_level": "medium",
+        "v1_v2_difference": -4.0,
+        "alert_type": "moderate_risk",
+        "alert_severity": "medium"
+    },
+    "conclusion": "The evaluated real-document pipeline produced reproducible analytical outputs across repeated API evaluations.",
+    "limitation": "Reproducibility of the evaluated case does not establish population-level model accuracy."
+}

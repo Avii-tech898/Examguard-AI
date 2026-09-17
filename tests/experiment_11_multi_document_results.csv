@@ -1,0 +1,5 @@
+document_id,compared_document_id,similarity,risk_v1_score,risk_v1_level,risk_v2_score,risk_v2_level,v1_v2_difference,alert_severity
+4,3,43.325,50.0,medium,46.0,medium,-4.0,medium
+3,4,43.325,50.0,medium,46.0,medium,-4.0,medium
+1,2,28.391,20.0,low,5.0,low,-15.0,low
+2,1,28.391,20.0,low,5.0,low,-15.0,low
