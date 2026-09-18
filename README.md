@@ -67,3 +67,105 @@ Alert Generation
 Analytics
       ↓
 Web Dashboard
+
+System Architecture
+                    ┌─────────────────────────┐
+                    │       React Frontend    │
+                    │       Vite + React      │
+                    └────────────┬────────────┘
+                                 │
+                                 │ HTTP / REST API
+                                 ↓
+                    ┌─────────────────────────┐
+                    │      FastAPI Backend    │
+                    │                         │
+                    │  API / Routing Layer    │
+                    └────────────┬────────────┘
+                                 │
+              ┌──────────────────┼──────────────────┐
+              │                  │                  │
+              ↓                  ↓                  ↓
+      ┌──────────────┐   ┌───────────────┐  ┌───────────────┐
+      │  Document    │   │ NLP / Text    │  │ Similarity    │
+      │  Processing  │   │ Analysis      │  │ Engine        │
+      └──────────────┘   └───────────────┘  └───────────────┘
+              │                  │                  │
+              └──────────────────┼──────────────────┘
+                                 ↓
+                       ┌──────────────────┐
+                       │   Risk Engine    │
+                       │     V1 / V2      │
+                       └────────┬─────────┘
+                                ↓
+                       ┌──────────────────┐
+                       │ Alert Management │
+                       └────────┬─────────┘
+                                ↓
+                       ┌──────────────────┐
+                       │    Analytics     │
+                       └────────┬─────────┘
+                                │
+                                ↓
+                       ┌──────────────────┐
+                       │      MySQL       │
+                       │    Database      │
+                       └──────────────────┘
+
+
+             Docker Container
+             ┌──────────────────────────────┐
+             │      EXAMGUARD Backend       │
+             │          Port 8000           │
+             └──────────────────────────────┘
+Project Structure
+
+EXAMGUARD-AI/
+│
+├── backend/
+│   ├── api/
+│   │   ├── alerts.py
+│   │   ├── analysis.py
+│   │   ├── analytics.py
+│   │   ├── document_text.py
+│   │   ├── documents.py
+│   │   ├── health.py
+│   │   ├── processing.py
+│   │   ├── risk.py
+│   │   └── similarity.py
+│   │
+│   ├── database/
+│   │   └── connection.py
+│   │
+│   ├── models/
+│   ├── schemas/
+│   ├── services/
+│   ├── utils/
+│   └── main.py
+│
+├── frontend/
+│   ├── public/
+│   ├── src/
+│   │   ├── api/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── App.jsx
+│   │   ├── main.jsx
+│   │   └── ...
+│   │
+│   ├── package.json
+│   ├── package-lock.json
+│   └── vite.config.js
+│
+├── tests/
+│   ├── unit/
+│   ├── integration/
+│   └── research/
+│
+├── uploads/
+│   └── documents/
+│
+├── Dockerfile
+├── .dockerignore
+├── .gitignore
+├── requirements.txt
+└── README.md
